@@ -1,0 +1,920 @@
+=== DBMS_Final Record.pdf (44 pages) ===
+
+
+--- PAGE 1 ---
+ 
+ 
+ 
+ 
+Focused Industry-ready Smart Talent 
+ 
+ 
+ 
+Master of Computer Applications 
+ 
+ 
+ 
+                                     Year 20    -    20 
+ 
+ 
+Department of Computer Science 
+KGiSL INSTITUTE OF INFORMATION MANAGEMENT 
+COIMBATORE-641 035 
+
+--- PAGE 2 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- PAGE 3 ---
+INDEX 
+ 
+ 
+S.NO. DATE TITLE PAGE NO. SIGNATURE 
+MYSQL (SQL) 
+1  BANKING SYSTEM   
+2  ONLINE RESERVATION SYSTEM 
+  
+3  PERSONAL INFORMATION   
+4  STUDENT MARK PROCESSING SYSTEM   
+MONGODB (NoSQL) 
+5  E-COMMERCE PRODUCT 
+CATALOG SYSTEM 
+  
+6  CURD OPERATIONS   
+7  BUILT-IN FUNCTIONS   
+8  SORTING, INDEXING & FILTERING   
+9  CREATE A COLLECTION & FIND DOCUMENT   
+10  STOCK EXCHANGE   
+--- PAGE 4 ---
+****** Program 1:Banking system******* 
+Primary Key, Unique Key creation 
+ 
+Unique key constraint Violation 
+ 
+Inserting NULL value in Unique key field 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 5 ---
+Foreign Key creation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Combining two table data using Joining function 
+ 
+ 
+ ************************ 
+
+--- PAGE 6 ---
+ 
+ 
+Program2: *****Online Reservation System***** 
+Table1: Table creation, value insertion & viewing data and its field. 
+Table Name: Customer     Primary key: c_id 
+ 
+Table2: Creation & description of the table 
+Table Name: Vehicle    Primary key: vid 
+ 
+Value Insertion and enum data type setting data violation 
+  
+
+--- PAGE 7 ---
+ 
+ 
+ 
+ Viewing vehicle table data 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table3: creation & setting check integrity to the field start_datetime 
+Table Name: reserve   Primary key:r_id   Foreign key: c_id,vid 
+Check Integrity Constraint assigned to start_datetime column 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 8 ---
+ 
+ 
+ 
+ 
+ 
+ 
+*********************************** 
+ 
+ 
+
+--- PAGE 9 ---
+ 
+ 
+Program3: *****Personal Information***** 
+ 
+ 
+ 
+ 
+  
+
+--- PAGE 10 ---
+ 
+ 
+ 
+Using LIKE Operator 
+ 
+ 
+  
+
+--- PAGE 11 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Group by with Aggregate functions in USER Table 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 12 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 13 ---
+ 
+ 
+Order by and Limit 
+ 
+ 
+  
+ 
+ 
+
+--- PAGE 14 ---
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Having Clause in EMP Table 
+ 
+
+--- PAGE 15 ---
+Program 4: ***** Student mark processing system***** 
+Table creation 
+Insert Values to Table 
+ 
+Update total, percentage column 
+
+--- PAGE 16 ---
+Logical Operator using Where Clause 
+ 
+ 
+ 
+********************** 
+
+--- PAGE 17 ---
+*******Program 5: Design an E-Commerce product catalog system using MongoDB as 
+a storage engine and insert values. ******** 
+Step 1: Open mongoshell:  
+ 
+ 
+Step 2: show databases;  and shift to newly created database named as e_commerce by 
+using query use e_commere. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 18 ---
+ 
+ 
+Step 3: Insert values to the new collection name as product and view the created 
+collections 
+ 
+Step 4: View the data in Table view 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 19 ---
+ 
+Step 5: View data in mongoshell 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+
+--- PAGE 20 ---
+Program 6: Perform basic CURD operations (Create, Update, Read and Delete) functions for 
+the product catalog. 
+ 
+Step 1: Create collection collegeshop in database e_shopping  
+ 
+ 
+ 
+ 
+ 
+Step 2: Insert one document in collegeshop  
+ 
+ 
+ 
+ 
+Insert many documents in collegeshop  
+Step 3: Read documents from collection using find() 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 21 ---
+Read documents from collection using findOne() 
+ 
+ 
+ 
+ 
+  
+ 
+Step 4: To find documents where qty is greater than 30 and less than 100. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+To find documents where qty is greater than or equal to 60 and less than or equal to100. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+
+--- PAGE 22 ---
+Step 5: To Update one document from the collection collegeshop 
+ 
+ 
+ 
+ 
+To view the data updation use find() 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Updating other two document one by one using updateone 
+  
+  
+Step 6: To UpdateMany document one at a time (all documents that match the specified filter 
+criteria) 
+ 
+ 
+
+--- PAGE 23 ---
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Proceed step 5 to update the document and continue with step 6 then output 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 24 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Step 7: To replaceone this document with a new one: 
+ 
+ 
+ 
+ 
+ 
+The item inkpen data is replaced by using above query 
+
+--- PAGE 25 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+--- PAGE 26 ---
+ 
+Deleting a Single Document:  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Deleting Many Document:  
+
+--- PAGE 27 ---
+******Program 7: Built-in function in MongoDB***** 
+Step 1 : Use e_shopping database → insert values to s_mark collection 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Step 2: Aggregate function $sum 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Result of $sum 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+--- PAGE 28 ---
+Step 3: Aggregate function $add $multiply $divide 
+ 
+Result of $add $multiply $divide 
+ 
+  
+  
+ 
+
+--- PAGE 29 ---
+Step 4: Update document with field edu_status  
+ 
+Step 5: Find documents in Table view 
+ 
+Find documents in mongoshell 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+
+--- PAGE 30 ---
+Step 6: Aggregate function $match - Filters documents based on specified conditions, similar to 
+the WHERE clause in SQL. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Step 7: Aggregate function $match with condition 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 31 ---
+Step 8: Without aggregate function document filtered using find() 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Step 09: Aggregate function $ group 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 32 ---
+ 
+Result of $ group 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Step 10: $Count 
+ 
+ 
+ 
+ 
+  
+ 
+
+--- PAGE 33 ---
+ 
+Step 11: Including and Excluding fields using $project and $limit 
+                    Result of $project 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Excluding “_id” field 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 34 ---
+Error because MongoDB does not allow mixing inclusion and exclusion in the same $project except 
+for the _id field.  
+ 
+                              Only Exclusions 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Adding new fields using $project:  
+************************************ 
+
+--- PAGE 35 ---
+******Program 8:  Sorting, filtering and Index in MongoDB***** 
+Step 1 : Use e_shopping database → insert values to product collection 
+Step 2: Filter the document based on category wise and price wise 
+ 
+ 
+Step 3: Sort the document based on price field  in ascending order 
+ 
+ 
+Step 4: Filter the document based category: furniture and apply descending order based on stock 
+field 
+ 
+
+--- PAGE 36 ---
+Step 5: Filter and sort the document based on category, price and name  
+ 
+ 
+Step 6: Before applying Index 
+ 
+ 
+ 
+ 
+Step 7: After applying Index 
+ 
+ 
+ 
+ ************************ 
+
+--- PAGE 37 ---
+********************************************************************************** 
+Program:9 Create a Collection and Document and perform the following: 
+a) Find a document by id  
+ b) Find a user by email 
+ c) Find a list of all users with the same firstname  
+d) Find all users who are more than 12 years old  
+********************************************************************************** 
+Find all users who are more than 12 years old 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 38 ---
+ 
+Find a list of all users with the same firstname  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 39 ---
+  
+Find a user by email 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Find a document by id 
+  
+ 
+ 
+******************************* 
+ 
+ 
+
+--- PAGE 40 ---
+******* Program 10: Use real time data set of Stock exchange by import CSV data******* 
+ 
+Step 1: Create new database sample and collection named as stock 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 41 ---
+Step 2:  Choose Collection menu form menubar and select Import data 
+ 
+  
+ 
+Step 3: Choose stock_data.csv from open dialog 
+ 
+ 
+ 
+
+--- PAGE 42 ---
+Step 4: Imported data in table view 
+ 
+Step 5: Find all the stocks where the profit is over 0.5 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 43 ---
+Step 6: Find all the stocks with negative growth 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 44 ---
+Command line Import method 
+Import CSV file 
+ 
+Import JSON file  
+ 
+ 
+ 
+Export JSON file format 
+ 
+Export CSV file format 
+ 
+ 
+ 
+******************** 

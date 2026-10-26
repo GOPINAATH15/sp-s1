@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Practicals | Java &amp; ADBMS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="title">Lab Codes</span>
+      <span class="subtitle">Java &amp; ADBMS Practicals</span>
+    </div>
+
+    <div class="top-actions">
+      <button id="copy-all-btn" class="top-btn" title="Copy all 22 practical codes into clipboard">
+        📋 Copy All Codes
+      </button>
+      <button id="sidebar-toggle-btn" class="top-btn mobile-only" title="Toggle Program List">
+        ☰ Menu
+      </button>
+    </div>
+  </header>
+
+  <!-- App Layout: Left Sidebar + Center Program Viewer -->
+  <div class="app-layout">
+    
+    <!-- Left Sidebar: Program List -->
+    <aside class="sidebar" id="sidebar">
+      <!-- Search Box -->
+      <div class="sidebar-search">
+        <input type="text" id="search-input" placeholder="Search program, query..." autocomplete="off">
+        <button id="clear-search" class="clear-search-btn" title="Clear">✕</button>
+      </div>
+
+      <!-- Subject Filter Tabs -->
+      <div class="sidebar-tabs">
+        <button class="filter-tab active" data-filter="all">All (22)</button>
+        <button class="filter-tab" data-filter="java">Java (12)</button>
+        <button class="filter-tab" data-filter="adbms">ADBMS (10)</button>
+      </div>
+
+      <!-- Program Links List -->
+      <div class="program-list" id="program-list">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </aside>
+
+    <!-- Center Content: Selected Program Display -->
+    <main class="main-viewer" id="main-viewer">
+      <!-- Rendered dynamically by app.js -->
+    </main>
+
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Code copied!</div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

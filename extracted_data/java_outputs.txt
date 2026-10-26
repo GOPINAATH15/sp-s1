@@ -1,0 +1,110 @@
+
+=== [PAGE 2] page_02_img_1_Image26.png ===
+R Problems Javadoc Declaration g Console
+<terminated> MainProgram [Java Application]
+Employee Number: 101
+Basic Pay: 5ØØØØ.75
+
+=== [PAGE 4] page_04_img_1_Image38.png ===
+R Problems Javadoc Declaration Console
+<terminated> Inheritance [Java Application]
+Dog is Barking
+Dog is Barking
+This is a Puppy, child of Dog.
+
+=== [PAGE 7] page_07_img_1_Image45.png ===
+Custom Shape Drawer
+Shapes Colors
+x
+
+=== [PAGE 9] page_09_img_1_Image50.png ===
+MouseAdapter Demo
+Mouse Exited the Frame
+x
+
+=== [PAGE 11] page_11_img_1_Image55.png ===
+R Problems O Javadoc Declaration g Console
+<terminated> StudentlnfoFile [Java Application]
+Enter number of students: 1
+Enter details for Student 1
+Name: gopi
+Roll Number: 25mca35
+Department :
+mca
+Marks: 89
+Student details written to file successfully.
+Reading student details from file:
+Name: gopi, Roll No: 25mca35, Dept:
+Name: gopi, Roll No: 25mca35, Dept:
+mca,
+mca,
+Marks :
+Marks :
+89
+89
+
+=== [PAGE 13] page_13_img_1_Image60.png ===
+Tree Viewer Example
+Root
+Branch 1
+t
+Leaf 1.1
+Leaf 1.2
+t
+Leaf 21
+x
+
+=== [PAGE 15] page_15_img_1_Image65.png ===
+R Problems Javadoc Declaration g Console
+<terminated> BadWordFilter [Java Application]
+Access Denied: File contains prohibited words.
+
+=== [PAGE 18] page_18_img_1_Image72.png ===
+Temperature Converter
+Celsius:
+Fahrenheit:
+onvert to Fahrenheit
+Clear
+x
+23
+7340
+Convert to Celsius
+
+=== [PAGE 21] page_21_img_1_Image79.png ===
+Student Details
+Name:
+Register No:
+Department:
+Email:
+Submit
+Student Details
+Console x
+Name: gopi
+gopi
+25MCA35
+MCA
+gop@gmail.com
+Clear
+x
+x
+ull.win32.x86
+Register No: 25MCA35
+Department: MCA
+Email: gopi@gmail.com
+
+=== [PAGE 23] page_23_img_1_Image84.png ===
+Drawing Basic Shapes
+x
+
+=== [PAGE 25] page_25_img_1_Image84.png ===
+Drawing Basic Shapes
+x
+
+=== [PAGE 28] page_28_img_1_Image100.png ===
+2D Transformations -
+Line & Rectangle
+Translate
+x
+Scaled
+Scal
+Rotate

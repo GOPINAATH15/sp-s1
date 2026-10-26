@@ -1,0 +1,2228 @@
+
+==================== page_01_img_1_Image13.png ====================
+KCDL-IIH)
+co-Kreate your Genius
+I(GiSL INSTITUTE OF INFORMATION MANAGEMENT
+Approved by AICTE, New Delhi and Affiliated to Bharathiar University
+ISO 9001:2015 Certified Institution
+I(GiSL Campus, Saravanampatti, Coimbatore - 641035
+
+==================== page_02_img_1_Image16.png ====================
+KGiSL INSTITUTE OF INFORMATION MANAGEMENT
+NAME:
+SEMESTER:
+SUBJECT:
+COIMBATORE - 641 035
+(Affiliated to Bharathiar University)
+DEPARTMENT OF COMPUTER SCIENCE
+LABORATORY RECORD
+ROLL No.:
+YEAR:
+Certified Bonafide Record of Work Done by
+Staff In Charge
+Place :
+Date :
+University Register No.
+Submitted for the University Practical Examination held on
+Internal Examiner
+HOD
+External Examiner
+
+==================== page_04_img_1_Image5.png ====================
+mysql> insert into bank values
+Query 0k, 1 row affected . 02
+mysql> select * from bank;
+(17076, '
+sec)
+preethi
+phonenumber
+6
+accno
+17071
+17072
+17073
+17074
+17075
+17076
+rows in
+cust_name
+velan
+anu
+shanthi
+arun
+padma
+preethi
+set CO. 00
+email
+. com
+anupriya@gmail . com
+sanu21@gmaiI . com
+NULL
+padma@gmail . com
+NULL
+sec)
+9788934500
+6734517000
+7890012345
+9894238341
+NULL
+NULL
+
+==================== page_04_img_2_Image17.png ====================
+mysql> create table bank(accno int primary key, cust_name varchar(15) ,email unique, phonenumber varchar(15) unique);
+Query 0k, 0 rows affected (0.08 sec)
+desc bank;
+I Field
+accno
+I Type
+int
+I Null I
+I YES I
+I YES I
+I YES I
+key I
+PRI I
+UNI I
+UNI I
+Default I Extra I
+I varchar(15)
+cust_name
+email
+I phonenumber I varchar(15)
+4 rows in set (0.01 sec)
+NULL
+I NULL
+NULL
+NULL
+Query 0k, 1 row affected (0.02 sec)
+mysql> insert into bank
+Query 0k, 2 rows affected (0.02 sec)
+Records: 2 Duplicates: 0 Warnings:
+mysql> select * from bank;
+mysql> insert into bank 'velan' , , '9788934500');
+' anu
+accno
+| 17071 |
+| 17072 |
+| 17073 |
+rows in
+3
+cust_name
+velan
+shanthi
+set (0.00
+email
+anupriya@gmail.com
+sanu21@gmail.com
+sec)
+' , 'anupriya@gmail.com' , '6734517000') , (17073, 'shanthi' , ' sanu21@gmail.com' ,
+phonenumber
+| 9788934500 |
+| 6734517000 |
+| 7890012345 |
+
+==================== page_04_img_3_Image18.png ====================
+mysql> insert into
+ERROR 1062 (23000) :
+mysql>
+bank values (17074, ' arun' , 'anupriya@gmall
+Duplicate entry 'anupriya@gmail . com' for
+• .com' , '6734517000');
+' bank. email '
+key
+
+==================== page_04_img_4_Image19.png ====================
+mysql> insert into bank values (17074, 'arun' , NULL, '9894238341 ' ) ;
+Query 0k, 1 row affected CO. 02 sec)
+mysql> insert into bank values (17075, 'padma' , 'padma@gmail.com' , null) ;
+Query 0k, 1 row affected CO. 02 sec)
+
+==================== page_05_img_1_Image22.png ====================
+mysql> create table Ioandetails(loanid int primary key,accno int, Ioanamt int, foreign key (accno) references bank(accno));
+Query 0k, 0 rows affected
+mysql> desc loandetails;
+I Field
+I Type I Null I
+I loanid I
+int I NO I
+I int I YES I
+accno
+I Ioanamt I int I YES I
+3 rows in set (0.01 sec)
+sec)
+Default I Extra I
+key I
+PRI I
+MUL I
+NULL
+NULL
+I NULL
+mysql> insert into loandetails ;
+Query 0k, 1 row affected (0.02 sec)
+mysql> insert into loandetails values(102, 17074, 60000) ;
+Query 0k, 1 row affected (0.02 sec)
+mysql> insert into loandetails values(103, 17077 , 45000) ;
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails ('dbl' . 'Ioandetails• ,
+fk_l' FOREIGN KEY ('accno') REFERENCES 'bank' C
+mysql> select * from Ioandetails;
+CONSTRAINT 'Ioandetails_ib
+2
+loanid I accno
+I loanamt I
+101 | 17071 |
+50000 |
+102 | 17074 |
+60000 |
+rows in set (0.00
+sec)
+
+==================== page_05_img_2_Image29.png ====================
+mysql> select
+cust_name
+b. loanid,l. Ioanamt from bank b inner join Ioandetails as I on b.accno=l.accno;
+loanid
+101
+102
+I Ioanamt
+velan
+arun
+2 rows in
+mysql>
+set
+(0.00 sec)
+
+==================== page_06_img_1_Image23.png ====================
+mysql> create table customer Cc_id int primary key , c _ name varcharCIO) , email varchar(25) , phonenumber varcharCIO)) ;
+Query 0k, O rows affected (0.04 sec)
+mysql> insert into customer valuesC1071, 'sethu' , 'sethu@gmail.com' , '7634529800');
+Query 0k, 1 row affected (0.02 sec)
+mysql> insert into customer valuesC1072, Imani' , Imani@gmail
+.com' , , (1073, 'jancy' ,
+Query 0k, 2 rows affected (0.02 sec)
+Records: 2 Duplicates : @ Warnings:
+jancy15@gmaiI . com
+, '9342156567');
+mysql>
+select * from customer;
+I c_name
+ema* I
+c_id
+| 1071
+I sethu
+| 1072 |
+mani
+| 1073
+I jancy
+rows
+I sethu@gmail.com
+mani@gmail.com
+I jancy15@gmait . com I
+phonenumber
+7634529800
+9843978876
+9342156567
+3
+mysql>
+in set sec)
+desc customer ;
+Extra
+4
+Field
+c_id
+c _ name
+email
+phonenumber
+rows in set
+I Type
+I int
+varcharC25)
+varcharC10)
+CO. 00 sec)
+Null I
+I YES
+I YES
+I YES
+key I
+PRI I
+Default I
+NULL
+NULL
+NULL
+NULL
+
+==================== page_06_img_2_Image25.png ====================
+mysql> create table vehicle(vid
+int primary
+key , v _ type
+Query 0k, @ rows affected CO. 04
+sec)
+mysql> desc vehicle;
+enumC ' car' , 'van' , 'bus , capacity int) ;
+Field
+vid
+I Type
+int
+Null
+NO
+YES
+YES
+key
+PRI
+Default
+NULL
+NULL
+NULL
+Extra
+3
+enumC ' car' ,
+van' , 'bus
+v _ type
+capacity I int
+rows in set (0.00 sec)
+
+==================== page_06_img_3_Image26.png ====================
+mysql> insert into vehicle '
+Query 0k, 1 row affected CO. 02 sec)
+mysql> insert into vehicle '
+Query 0k, 1 row affected CO. 02 sec)
+car
+van
+mysql> insert into vehicle valuesC12@1, 'bus' , 52)
+Query 0k, 1 row affected (0.01 sec)
+mysql> insert into vehicle valuesC12@1, 'bike' , 1)
+ERROR 1265 Data truncated for column
+' v _ type '
+at row 1
+
+==================== page_07_img_1_Image29.png ====================
+mysql>
+3
+vid
+1001
+1200
+1201
+rows
+select *
+v _ type
+car
+van
+I bus
+in set
+from vehicle;
+capacity
+4
+10
+52
+sec)
+
+==================== page_07_img_2_Image30.png ====================
+mysql> create table reserve(r_id int primary key,c_id int,vid int, start_datetime datetime check(start_datetime *'2025-10-25')
+tetime datetime,palce varchar(15) , foreign key(c_id) references ,foreign key(vid) references vehicle(vid));
+Query 0k, 0 rows affected (0.05 sec)
+
+==================== page_07_img_3_Image31.png ====================
+mysql> desc
+Field
+r_id
+c_id
+vid
+reserve ;
+Type
+int
+int
+int
+datetime
+datetime
+varcharC15)
+Null
+NO
+YES
+YES
+YES
+YES
+YES
+key
+PRI
+MUL
+MUL
+Default
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Extra
+6
+start _ datetime
+end _ datetime
+place
+rows in set (0.00 sec)
+
+==================== page_08_img_1_Image34.png ====================
+mysql> insert into reserve values(l,
+salem');
+1071, 1200, '2025-10-26
+Query 0k, 1 row affected CO. 02 sec)
+mysql> insert into reserve valuesC2,
+1073, 1201, '2025-10-25
+, '2025-10-27
+Query 0k, 1 row affected CO. 02 sec)
+, '2025-10-26
+mysql> insert into reserve valuesC3, 1072, 1200, • • '
+ERROR 3819 Check constraint 'reserve_chk_l' is violated .
+09
+delhi');
+.00 , '2025-10-25 '
+place
+salem
+delhi
+madurai ' ) ;
+mysql>
+select
+c_id
+| 1071
+| 1073
+in set
+* from reserve;
+vid I start _ datetime
+| 1200 | 2025-10-26 06 00.
+| 1201 | 2025-10-25
+(0.00 sec)
+end _ datetime
+2025-10-26
+2025-10-27 06
+2
+r_id
+1
+2
+rows
+00 .
+
+==================== page_09_img_1_Image16.png ====================
+mysql> insert into personal _ data values( ' sumathi' , ' sumathi15@gmaiI.com' , 'bharathiyar'), ('ravi' , 'ravi23@gmaiI.com' , 'bhara
+thidasan , C 'keerthi' , . com' , ' bharathiar') ;
+Query 0k, 3 rows affected CO. 02 sec)
+Records: 3 Duplicates: @ Warnings: @
+Query 0k, 1 row affected CO. 00 sec)
+mysql> insert into personal _ data values( 'kumar' , 'kumarl@l@gmail.com' , 'bharathiar');
+Query 0k, 1 row affected CO. 02 sec)
+mysql> create table personal_data(username
+, emailid varchar(25) unique , UG_University varchar(25)) ;
+Query 0k, @ rows affected CO. 08
+mysql> desc personal _ data;
+mysql> insert into personal _ data values(' sumathi' , 'suma21@4@gmaiI.com' , 'periyar');
+Field
+username
+emailid
+I Type
+varcharC25)
+sec)
+Null
+YES
+YES
+YES
+key
+UNI
+Default
+NULL
+NULL
+NULL
+Extra
+3
+UG_University I varcharC25)
+rows in set (0.02 sec)
+
+==================== page_09_img_2_Image17.png ====================
+mysql> select * from personal _ data;
+UG_University
+bharathiyar
+bharathidasan
+bharathiar
+periyar
+bharathiar
+5
+username
+sumathi
+ravi
+keerthi
+sumathi
+kumar
+rows in
+emailid
+sumathi15@gmaiI . com
+ravi23@gmaiI . com
+. com
+. com
+kumarl@l@gmail . com
+set (0.00 sec)
+
+==================== page_10_img_1_Image22.png ====================
+mysql> SELECT * FROM personal_data WHERE UG_University LIKE
+username
+sumathi
+ravi
+keerthi I
+sumathi
+kumar
+emailid
+sumathi15@gmaiI . com
+ravi23@gmaiI . com
+. com
+. com
+kumarl@l@gmail . com
+UG_University
+bharathiyar
+bharathidasan
+bharathiar
+periyar
+bharathiar
+5
+rows in set (0.00 sec)
+mysql> SELECT * FROM personal_data WHERE UG_University LIKE
+emailid
+username
+UG_University I
+bharathiyar
+bharathiar
+periyar
+bharathiar
+4
+sumathi
+keerthi
+sumathi
+kumar
+rows in
+sumathi15@gmaiI . com
+I . com
+. com
+I . com
+set (0.00 sec)
+
+==================== page_10_img_2_Image23.png ====================
+mysql> SELECT * FROM personal _ data WHERE emailid
+LIKE
+LIKE
+. com%' ;
+username
+sumathi
+ravi
+keerthi I
+sumathi
+kumar
+emailid
+sumathi15@gmaiI . com
+ravi23@gmaiI . com
+. com
+. com
+kumarl@l@gmail . com
+UG_University
+bharathiyar
+bharathidasan
+bharathiar
+periyar
+bharathiar
+5
+rows in set (0.01 sec)
+mysql> SELECT * FROM personal _ data WHERE username
+emailid
+username
+I UG_University I
+ravi
+I bharathidasan
+ravi23@gmaiI . com
+1 row in set (0.00 sec)
+mysql> SELECT * FROM personal _ data WHERE username LIKE
+emailid
+I UG_University I
+1
+username
+kumar
+row in set
+I bharathiar
+kumarl@l@gmail . com
+(0.00 sec)
+
+==================== page_11_img_1_Image31.png ====================
+mysql> SELECT * FROM personal_data WHERE UG_University NOT LIKE
+1
+username
+sumathi
+row in set
+emailid
+I UG_University I
+I periyar
+. com
+(0.01 sec)
+
+==================== page_11_img_2_Image32.png ====================
+mysql> select * from user;
+I Iduser
+I place
+username
+1001 | anu
+1002 | priya
+1003 |
+monika
+1005 | kiru
+I Cbe
+ooty
+I Cbe
+ooty
+4 rows in set (0.00 sec)
+mysql> select from
+1 row in set (0.02 sec)
+mysql> select sum(invested)
+sum(invested) I
+1 row in set (0.00 sec)
+mysql> select avg(invested)
+avg(invested) I
+invested
+NULL
+user;
+from user;
+from user;
+
+==================== page_12_img_1_Image35.png ====================
+mysql> select place , min(invested) from user group by place;
+I place
+min(invested) I
+I Cbe
+ooty I
+2 rows in set (0.01 sec)
+mysql> select place, sum(invested) from user group by place;
+2
+place
+Cbe
+ooty
+rows
+sum(invested) I
+in
+set
+(0.00 sec)
+
+==================== page_12_img_2_Image36.png ====================
+mysql> update user set where Iduser=1@@3;
+Query 0k, 1 row affected (0.01 sec)
+Rows matched: 1 Changed: 1 Warnings: @
+
+==================== page_12_img_3_Image37.png ====================
+mysql>
+select place, avg(invested) from user group by place;
+2
+place
+Cbe
+ooty
+rows
+in
+avg(invested) I
+set (0.02 sec)
+
+==================== page_12_img_4_Image38.png ====================
+mysql> select * from user;
+invested
+NULL
+4
+Iduser
+username
+1001 | anu
+1002 | priya
+1003 |
+monika
+1005 | kiru
+rows in set CO. 02
+I place
+I Cbe
+ooty
+I Cbe
+ooty
+sec)
+
+==================== page_13_img_1_Image43.png ====================
+mysql> select * from personalinfo order
+by studentname asc;
+created_at
+2025-09-02
+2025-09-02
+2025-09-02
+2025-09-02
+2025-09-02
+5
+rollno
+25MCA@4
+25MCA@1
+25MCA02
+25MCA@6
+25MCA@3
+rows in
+I studentname I
+I Abi
+I Anu
+I Banupriya
+I Mani
+I Prakash
+set (0.00 sec)
+fathername
+Arunachalam
+Murugan
+Balaji
+Senthil
+kumar
+occupation
+Manager
+Manager
+salesman
+Teacher
+Clerk
+email
+. com
+anupriya@gmail . com
+banu@gmail . com
+. com
+prakash21@gmaiI . com
+14.
+•47: 13
+mysql> select * from personalinfo order
+I studentname I fathername
+rollno
+by studentname asc limit 1;
+occupation
+email
+Manager
+by studentname desc limit 1;
+created_at
+2025-09-02
+1 25MCA@4 1 Abi
+1 row in set (0.00 sec)
+I Arunachalam
+14.
+•47: 13
+mysql> select * from personalinfo order
+I studentname I fathername
+rollno
+occupation
+email
+created_at
+2025-09-02
+1
+25MCA@3 1 Prakash
+row in set (0.00 sec)
+I kumar
+I Clerk
+I prakash21@gmaiI . com
+
+==================== page_13_img_2_Image44.png ====================
+mysql>
+eid
+1
+2
+2 rows
+mysql>
+select *
+ename
+sindhu
+I kavi
+from emp;
+I age
+25 |
+26 |
+edu
+mca
+mca
+in set (0.02 sec)
+insert into emp valuesC3, 'rithu' , 25, 'mca'), (4, '
+raju' , 26, 'mca'), (5, 'ganesh' , 25, 'mca'), (6, 'priya' , 26, 'mca');
+Query 0k, 4 rows affected CO. 02 sec)
+Records: 4 Duplicates: @ Warnings: @
+
+==================== page_14_img_1_Image47.png ====================
+mysql>
+eid
+2
+3
+4
+5
+6
+6 rows
+select *
+ename
+sindhu
+kavi
+rithu
+raju
+ganesh
+priya
+from emp;
+I age
+25
+26
+25
+26
+25
+26
+edu
+mca
+mca
+mca
+mca
+mca
+mca
+in set (0.00
+sec)
+
+==================== page_14_img_2_Image48.png ====================
+mysql> select num_employees from emp group by edu having countCeid)>3;
+I edu
+num_employees
+mca
+1 row in set (0.02 sec)
+mysql>
+I age
+25
+26
+2 rows
+select age, num_employees from emp group by age having countCeid)>=3;
+num_employees
+in set (0.00 sec)
+
+==================== page_15_img_1_Image16.png ====================
+mysql> insert into studentdata ,
+Query 0k, 1 row affected (0.02 sec)
+mysql> insert into studentdata (rollno,studentname, ,
+Query 0k, 2 rows affected (0.02 sec)
+Records: 2 Duplicates: @ Warnings: 0
+mysql> select * from studentdata;
+I adbms I cn I
+, 65, 57 ,
+chitra'
+rollno
+1 25mca01 1 arun
+1 25mca02
+I banu
+1 25mca03
+I chitra
+set (0.00 sec)
+3 rows in
+I studentname I java
+os
+67 |
+781
+69 |
+60 |
+561 46
+d_net I
+50 |
+48 |
+98 |
+total
+NULL I
+NULL I
+NULL I
+I percentage I
+501
+65 |
+78 |
+57 |
+57 |
+67 |
+NULL I
+NULL I
+NULL I
+
+==================== page_15_img_2_Image17.png ====================
+mysql> create table studentdata(rollno varchar(8) primary key,studentname varchar(15),java int,adbms int,cn int,os int,d_net int, tota
+I int, percentage int);
+Query 0k, 0 rows affected (0.04 sec)
+mysql> desc studentdata;
+Field
+rollno
+studentname
+java
+adbms
+cn
+os
+I d_net
+total
+percentage
+9 rows in set
+Type
+I varchar(8)
+I varchar(15) I YES
+int
+int
+int
+int
+int
+int
+int
+I Null I key I
+Default I
+Extra I
+I PRI I NULL
+I YES I
+I YES I
+I YES I
+I YES I
+I YES I
+I YES I
+I YES I
+I NULL
+I NULL
+I NULL
+I NULL
+I NULL
+I NULL
+I NULL
+I NULL
+(0.01 sec)
+
+==================== page_15_img_3_Image18.png ====================
+mysql> update studentdata
+Query 0k, 3 rows affected
+Rows matched: 3 Changed:
+mysql> update studentdata
+Query 0k, 3 rows affected
+Rows matched: 3 Changed:
+set total=java+adbms+cn+os+d_net
+(0.02 sec)
+3 Warnings: @
+set percentage=totaI/5 ;
+(0.02 sec)
+3 Warnings:
+mysql> select * from studentdata;
+3
+rollno
+25mca@1
+25mca02
+25mca@3
+rows in
+I studentname
+I java
+I arun
+I banu
+I chitra
+set CO. 00
+50
+65
+78
+I adbms
+57
+57
+67
+cn
+67
+69
+56
+os
+78
+60
+46
+d _ net
+50
+48
+98
+total
+302
+299
+345
+percentage
+60
+60
+69
+sec)
+
+==================== page_16_img_1_Image21.png ====================
+mysql> select rollno, java from studentdata where java between 45 and 65;
+I java
+rollno
+1 25mca@1 1
+50 |
+1 25mca@2 1
+65 |
+2 rows in set (0.00 sec)
+mysql> select rollno, java,d_net from studentdata where java>45 and d_net>45;
+set (0.00 sec)
+3
+rollno
+25mca@1
+25mca02
+25mca@3
+rows in
+I java
+50
+65
+78
+I d _ net
+50
+48
+98
+mysql> select rollno,cn,os from studentdata where or
+2
+rollno
+25mca@1
+25mca02
+rows in
+cn
+set
+67
+69
+os
+78 |
+60 |
+sec)
+
+==================== page_16_img_2_Image22.png ====================
+mysqL> select roLLno , studentname
+total
+from
+studentdata
+where
+not
+between
+• and
+I studentname
+rollno
+1 25mca@2 1 banu
+1 row in set (0.00 sec)
+mysql> select rollno, studentname from studentdata where total <> 302;
+I studentname
+rollno
+1 25mca@2 1 banu
+1 25mca@3 1 chitra
+2 rows in set (0.00 sec)
+mysql> select rollno, studentname , total from studentdata where total=299;
+I studentname I total I
+rollno
+1
+25mca@2 1 banu
+row in set (0.00 sec)
+299 |
+
+==================== page_17_img_1_Image19.png ====================
+MongoDB Compass - mycollections/Shell
+Connections Edit View Help
+Compass
+O My Queries
+CONNECTIONS (l)
+Search connections
+mycollections
+admin
+config
+local
+mongodbVSCodePlaygroundD8
+Welcome
+mycollections
+) show databases;
+( admin
+config
+local
+mongodbVSCodePIaygroundDB
+test
+mongosh: mycollections
+40.00 KiB
+108.00 KiB
+72.00 KiB
+40.00 KiB
+
+==================== page_17_img_2_Image20.png ====================
+>
+use e _ commerce
+switched to db e _ commerce
+
+==================== page_17_img_3_Image21.png ====================
+MongoDB Compass - mycollections/Shell
+Connections Edit View Help
+Compass
+My Queries
+CONNECTIONS (l)
+Search connections
+mycollections
+admin
+config
+e_commerce
+e_shopping
+local
+mongodbVSCodePlaygroundDB
+sample
+
+==================== page_18_img_1_Image26.png ====================
+>
+db . products . insertMany ( [
+name :
+name :
+name :
+name :
+name :
+name :
+name :
+name :
+Laptop" ,
+category: "Electroni cs", price: 12@@, stock: 50 } ,
+"Mouse"
+category: "Electroni price: 25, stock: } ,
+Keyboa rd
+category: "Electronics", price: 75, stock: 150 } ,
+"Desk Chai r" ,
+category: "Furniture", price: stock: 30 } ,
+"Coffee Table"
+category: "Furniture", price: 15@, stock: 40 } ,
+Bookcase" ,
+category: "Furniture", price: stock: 20 } ,
+"T—Shi rt", category: "Apparel", price: 20, stock: } ,
+Jeans"
+category: "Apparel", price: 60, stock: }
+
+==================== page_18_img_2_Image27.png ====================
+MongoDB Compass - mycollections/e_commerce.products
+Connections Edit View Collection Help
+products
+products
+student
+product
+o
+Open MongoDB shell
+Options
+x
+Compass
+My Queries
+CONNECTIONS (1)
+Search connections
+mycollections
+admin
+e config
+e_commerce
+products
+e_shopping
+e local
+mongodbVSCodePlaygrou nd DB
+sample
+mongosh: mycollections
+mycollections > e_commerce
+Documents 8
+Aggregations
+Schema
+•value
+Indexes
+Validation
+Type a query: field:
+or
+Generate-guery.
+25
+category String
+"Electronics"
+"Electronics"
+"Electronics"
+"Furniture"
+"Furniture"
+"Furniture"
+Apparel"
+"Apparel"
+Explain
+1 — 8 of 8
+4
+6
+products
+_ id Objectld
+obj ectld ( ' 68f9afa5B2de359m
+Obj (
+' 58f9afa582de359—
+Obj ectld (
+' 68f9afa5B2de359m
+Obj (
+Obj ectld (
+' 68f9afa582de359-
+obj ectld ( '
+Objectld (
+' 68f9afa582de359-
+Obj ( '
+name String
+" Laptop"
+" Mouse n
+"Keyboa rd"
+"Desk Chai
+"Coffee Table"
+"Bookcase"
+"T-shi rt "
+" Jeans
+Reset
+prfce Int32
+12öö
+25
+3öØ
+159
+260
+
+==================== page_19_img_1_Image30.png ====================
+mycollections
+E_commerce
+product
+admin
+config
+local
+mongodbVSCodePlaygroundDB
+
+==================== page_19_img_2_Image31.png ====================
+>
+db . products . fi nd ( )
+_ id•. Objectld('68f9afa582de359b62abe9ef'),
+Laptop' ,
+name:
+category: Electroni cs
+price:
+stock:
+_id: Objectld('68f9afa582de359b62abe9fO')
+Mouse
+name:
+category: Electroni cs
+price: 25,
+stock:
+_id: Objectld('68f9afa582de359b62abe9f1')
+Keyboard
+name:
+category: Electroni cs
+price: 75,
+stock: 15@
+
+==================== page_20_img_1_Image28.png ====================
+>
+>
+use e _ shopping
+switched to db e _ shopping
+db . c reateCoI lecti on ( collegeshop " )
+0k 1 }
+
+==================== page_20_img_2_Image29.png ====================
+>
+db. cot legeshop. i nsertOne ( {i tem : notebook" , qty : 50} )
+acknowledged: true,
+insertedld: Objectld('68e72b45771f57bccf5daf3b')
+
+==================== page_20_img_3_Image30.png ====================
+>
+db. cot legeshop. i nsertMany( [ {i tem : ballpoi ntpen , qty : , {i tem : " i nkpen" , qty : 6@}] )
+acknowledged :
+true,
+insertedlds:
+Objectld('68e72b8e771f57bccf5daf3c')
+Objectld('68e72b8e771f57bccf5daf3d')
+
+==================== page_20_img_4_Image31.png ====================
+>
+db. collegeshop. fi {$gt :
+15
+i tem :
+qty:
+i tem :
+qty:
+i tem :
+qty:
+Objectld ( ' 68e72b45771f57bccf5daf3b ' )
+notebook
+50
+Objectld ( ' 68e72b8e771f57bccf5daf3c ' )
+ballpoi ntpen' ,
+Objectld ( ' 68e72b8e771f57bccf5daf3d ' )
+'inkpen'
+60
+
+==================== page_21_img_1_Image34.png ====================
+>
+db. cot legeshop. fi ndOne({i tem : ballpoi ntpen
+Objectld ( ' 68e72b8e771f57bccf5daf3c ' )
+. 'ballpoi ntpen' ,
+i tem •
+qty:
+
+==================== page_21_img_2_Image35.png ====================
+>
+db. qty: { $gt: 30, $ It: } } )
+i tem :
+qty:
+i tem :
+qty:
+Obj ( ' 68e72b45771f57bccf5daf3b ' )
+notebook
+50
+Objectld ( ' 68e72b8e771f57bccf5daf3d ' )
+'inkpen'
+60
+
+==================== page_21_img_3_Image36.png ====================
+>
+db. collegeshop.fi qty: { $gte: 60, $1 te:
+Obj ( ' 68e72b8e771f57bccf5daf3c ' )
+item: ntpen' ,
+qty:
+Objectld ( ' 68e72b8e771f57bccf5daf3d ' )
+'inkpen'
+i tem :
+qty:
+60
+
+==================== page_22_img_1_Image44.png ====================
+>
+db. cot legeshop. updateMany ( {category : "wri ti ngstu ff"} , {$set : {satus : avai table"}} )
+
+==================== page_22_img_2_Image45.png ====================
+> db. collegeshop. updateOne (
+{ item: "notebook" }
+{ $set: { "category": "paperstuff" } }
+
+==================== page_22_img_3_Image46.png ====================
+>
+db. collegeshop. fi nd ( ) ;
+_id: Objectld('68e72b45771f57bccf5daf3b')
+i tem :
+notebook
+qty: 50,
+category: 'paperstuff'
+i tem :
+qty:
+i tem :
+qty:
+Objectld ( ' 68e72b8e771f57bccf5daf3c ' )
+ballpoi ntpen' ,
+Objectld ( ' 68e72b8e771f57bccf5daf3d ' )
+'inkpen'
+60
+
+==================== page_22_img_4_Image47.png ====================
+>
+db. cot legeshop. updateOne (
+{ item: "ballpointpen" }
+{ $set: { "category" :
+"writingstuff" } }
+
+==================== page_22_img_5_Image48.png ====================
+>
+db. cot legeshop. updateOne (
+{ item: "inkpen" } ,
+{ $set: { "category" :
+"writingstuff" } }
+
+==================== page_23_img_1_Image51.png ====================
+>
+db. cot legeshop. updatemany ( {category : "wri ti ngstu ff"} , {$set : {satus : avai table"}} )
+O TypeError:
+db. collegeshop.updatemany is not a function
+
+==================== page_23_img_2_Image46.png ====================
+>
+db. collegeshop. fi nd ( ) ;
+_id: Objectld('68e72b45771f57bccf5daf3b')
+i tem :
+notebook
+qty: 50,
+category: 'paperstuff'
+i tem :
+qty:
+i tem :
+qty:
+Objectld ( ' 68e72b8e771f57bccf5daf3c ' )
+ballpoi ntpen' ,
+Objectld ( ' 68e72b8e771f57bccf5daf3d ' )
+'inkpen'
+60
+
+==================== page_23_img_3_Image52.jpg ====================
+db. legeshop. fi nd ( )
+_id: Objectld('68e72b45771f57bccf5daf3b')
+i tem :
+notebook
+qty: 50,
+category: 'paperstuff'
+_id: Objectld('68e72b8e771f57bccf5daf3c')
+item: ntpen' ,
+qty: 100,
+category: 'writingstuff'
+_id: Objectld('68e72b8e771f57bccf5daf3d')
+'inkpen'
+i tem :
+qty: 60,
+category: 'writingstuff'
+
+==================== page_24_img_1_Image55.png ====================
+>
+db. cot legeshop. tem : "i nkpen , {i tem : bluei nkpen , qty : 70 , category : "wri ti ngstuff" , status : avai table
+acknowledged: true,
+insertedld: null,
+matchedCount: 1,
+modi fiedCount: 1,
+upsertedCount: @
+
+==================== page_24_img_2_Image56.png ====================
+>
+db. cot legeshop. updateMany ( {category : "wri ti ngstu ff"} , {$set : {satus : avai table"}} )
+acknowledged: true,
+insertedld: null,
+matchedCount: 2,
+modi fiedCount: 2,
+upsertedCount: @
+
+==================== page_24_img_3_Image57.png ====================
+>
+db. cot legeshop. fi nd ( )
+_id: Objectld('68e72b45771f57bccf5daf3b')
+i tem :
+notebook
+qty: 50,
+category: 'paperstuff'
+_id: Objectld('68e72b8e771f57bccf5daf3c')
+item: 'ballpoi ntpen
+qty: 100,
+category: 'writi ngstuff'
+satus: 'available'
+_id: Objectld('68e72b8e771f57bccf5daf3d')
+'inkpen'
+i tem :
+qty: 60,
+category: 'writi ngstuff'
+satus: 'available'
+
+==================== page_25_img_1_Image60.png ====================
+>
+db . collegeshop. i nsertOne ( {i tem: rbox" , qty : 55 , category : "writi ngstuff" , status : avai table"
+acknowledged: true,
+insertedld: Objectld('68e74dff771f57bccf5daf3e')
+
+==================== page_25_img_2_Image61.png ====================
+>
+db. cot legeshop. fi nd ( )
+_id: Objectld('68e72b45771f57bccf5daf3b')
+i tem :
+notebook
+qty: 50,
+category: 'paperstuff'
+_id: Objectld('68e72b8e771f57bccf5daf3c')
+ballpoi ntpen' ,
+i tem :
+qty: 100,
+category: 'writi ngstuff'
+satus: 'available'
+_id: Objectld('68e72b8e771f57bccf5daf3d')
+bluei nkpen
+i tem :
+qty: 70,
+category: 'writi ngstuff'
+status: 'available'
+
+==================== page_26_img_1_Image66.png ====================
+>
+db . collegeshop. fi nd ( )
+_ id•. Objectld('68e72b8e771f57bccf5daf3c'),
+ballpoi ntpen• ,
+item:
+qty:
+category: 'writi ngstuff'
+satus: 'available
+_ id•. Objectld('68e72b8e771f57bccf5daf3d'),
+blueinkpen' ,
+item:
+qty: 70,
+category: 'writi ngstuff'
+status: ' available'
+_ id•. Objectld('68e74dff771f57bccf5daf3e'),
+item:
+colou rbox
+qty: 55,
+category: 'writi ngstuff'
+
+==================== page_26_img_2_Image67.png ====================
+>
+db . collegeshop. deleteOne ( {i tem : colou rbox } )
+acknowled ged :
+true,
+deletedCount :
+1
+
+==================== page_26_img_3_Image68.png ====================
+db . collegeshop. deleteMany ( {category : "wri ti ngstuff"} )
+>
+acknowled ged :
+true,
+deletedCount :
+2
+db . collegeshop. fi nd ( )
+>
+
+==================== page_27_img_1_Image5.png ====================
+sname: 'Arun
+java: 76,
+cn: 73,
+os: 98,
+totalmark:
+247
+banu'
+sname :
+java: 67,
+cn: 56,
+os: 76,
+totalmark:
+199
+
+==================== page_27_img_2_Image22.png ====================
+>
+db. s_mark. insertMany ( [{_id:2 , sname : "banu" , java : 67 , cn : 56 , os : 76} , { _ id : 3 , sname : "chi trat' , j ava : 89 , cn : 67 , os : 54} ,
+
+==================== page_27_img_3_Image23.png ====================
+>
+use e _ shopping
+switched to db e _ shopping
+
+==================== page_27_img_4_Image24.png ====================
+>
+db. s_mark. i nsertOne ({_id : 1 , sname : "Arun" , j ava : 76 , cn : 73 , os : 98}) ;
+acknowledged: true,
+insertedld: 1
+
+==================== page_27_img_5_Image25.png ====================
+[ _ id :4, sname : "dharshan" , j ava : 73 , cn :45 , os : 69}] )
+
+==================== page_27_img_6_Image26.png ====================
+>
+db. s_mark. aggregate ( [
+$addFieIds: {
+totalmark: { $sum:
+1)
+["$java", "$cn", "$os"] }
+
+==================== page_28_img_1_Image29.png ====================
+-id: 1,
+sname: 'Arun •
+java: 76,
+cn: 73,
+os: 98,
+totatmark: 247
+percentage: 82.33333333333334
+id: 2,
+'banu
+sname:
+java: 67,
+cn: 56,
+os: 76,
+totatmark: 199,
+percentage: 66.33333333333333
+
+==================== page_28_img_2_Image30.png ====================
+>
+db . s _ mark. aggregate ( [
+$addFieIds: {
+totalmark: { $add:
+percentage: {
+$multiply: [
+{ $divide: [ {
+1)
+["$java ,
+$add:
+["$java", " $cn
+
+==================== page_29_img_1_Image33.png ====================
+1
+2
+3
+4
+s mark
+id Int32
+1
+2
+3
+4
+sname String
+"Arun"
+"banu"
+"chi trat'
+"dharshan"
+java
+76
+67
+89
+73
+Int32
+cn Int32
+73
+56
+67
+45
+
+==================== page_29_img_2_Image34.png ====================
+{_id: 1}, { $set: {"edu_status" :
+"regular"}})
+
+==================== page_29_img_3_Image35.png ====================
+{_id:2}, { $set: {"edu_status" :
+"intern"}} )
+
+==================== page_29_img_4_Image36.png ====================
+{_id:3}, { $set: {"edu_status" :
+"regular"}})
+
+==================== page_29_img_5_Image37.png ====================
+{_id:4}, { $set: {edu_status:
+"intern"}} )
+
+==================== page_29_img_6_Image38.png ====================
+>
+db. s_mark. fi nd ( )
+sname: 'Arun'
+java: 76,
+cn: 73,
+os: 98,
+edu status:
+'banu
+sname :
+java: 67,
+edu
+56,
+76,
+status:
+regular'
+i ntern
+
+==================== page_29_img_7_Image39.png ====================
+chitra'
+sname :
+java: 89,
+edu
+67,
+54 ,
+status:
+4,
+regular
+dharshan
+sname :
+java: 73,
+os:
+edu
+45,
+69,
+status:
+i ntern
+
+==================== page_30_img_1_Image42.png ====================
+>
+db. s_mark. aggregate ( [{$match :
+{edu_status : regular" } } ] )
+sname: 'Arun
+java: 76,
+os:
+edu
+73,
+98,
+status:
+3,
+regular'
+chitra'
+sname :
+java: 89,
+edu
+67,
+54 ,
+status:
+regular'
+
+==================== page_30_img_2_Image43.png ====================
+> $match:
+banu'
+sname :
+java: 67,
+{ edu_status:
+"intern"
+{ $gte:
+70
+edu
+56,
+76,
+status:
+i ntern
+
+==================== page_31_img_1_Image46.png ====================
+>
+db. s_mark. fi nd ( {edu_status : "i ntern )
+'banu
+sname :
+java: 67,
+cn: 56,
+os: 76,
+edu status:
+i ntern
+dharshan
+sname :
+java: 73,
+os:
+edu
+45,
+69,
+status:
+i ntern
+
+==================== page_31_img_2_Image47.png ====================
+>
+db. s_mark. aggregate ( [
+$group: {
+fid: "$edu_status"
+avg_java: { $avg: "$java'
+avg_cn :
+avg_os :
+count :
+1)
+{ $avg.
+{ $avg.
+{ $sum:
+// group key
+// how many students in each group
+
+==================== page_32_img_1_Image50.png ====================
+_id: 'intern'
+avg_j ava:
+avg_cn: 50.5,
+avg_os: 72.5
+count: 2
+1 d regular
+_ java: 82.5
+avg
+avg_
+cn: 70,
+avg_
+os: 76,
+count: 2
+
+==================== page_32_img_2_Image51.png ====================
+>
+db . s _ mark. aggregate ( [
+$match:
+$count:
+1)
+{ "edu_status" :
+"regular" }
+"totalregularstudents"
+total regula r students :
+2
+
+==================== page_32_img_3_Image52.png ====================
+>
+db . s _ mark. aggregate ( [
+$match:
+$count:
+1)
+{ "edu_status" :
+ntern
+"Total _ Intern _ Students"
+Total Intern Students:
+2
+
+==================== page_33_img_1_Image55.png ====================
+>
+use e _ shopping
+switched to db e _ shopping
+db . s _ ma rk. esti matedDocumentCount ( )
+>
+4
+db . s _ mark. countDocuments ( { } )
+>
+4
+: "i ntern } )
+e _ shoppi ng
+
+==================== page_33_img_2_Image56.png ====================
+>
+db . product.
+$proj ect: {
+"name". 1
+"category" :
+"stock": 1
+1,
+$ limit:
+1)
+2
+
+==================== page_33_img_3_Image57.png ====================
+Laptop' ,
+name:
+category: Electroni cs
+stock:
+Mouse
+name:
+category: Electroni cs
+stock:
+e _ shoppi
+
+==================== page_33_img_4_Image58.png ====================
+>
+db. student. $proj ect:
+fi rstname :
+lastname:
+age: 16,
+'adhi
+ravi
+email: 'adhi ravi@gmail.com
+fi rstname :
+lastname:
+'adhi
+'mani
+email: dhivya@gmail.com
+fi rstname :
+lastname:
+age: 15,
+balu
+'vetul
+email: 'baluv@gmail.com
+
+==================== page_34_img_1_Image66.png ====================
+>
+db . student. aggregate( [ {
+-id: 1,
+$proj ect :
+"fullName" :
+{ $concat:
+["$fi rstname",
+"$1 astname"]
+fullName:
+id: 2,
+fullName:
+_id: 3,
+fullName:
+adhi
+adhi
+balu
+ravi
+mani
+velu
+
+==================== page_34_img_2_Image67.png ====================
+>
+$proj ect: {'t "f -i "age" : @ , "eman
+db . student. aggregate( [ {
+irror
+Invalid $proj ect caused by
+. Cannot do exclusion
+on field
+age in inclusion projection
+
+==================== page_34_img_3_Image68.png ====================
+>
+db. student. aggregate ( [
+$project: {
+_id: @ ,
+age: @
+1)
+fi rstname:
+lastname :
+' adhi'
+ravi
+email: 'adhi ravi@gmait.com'
+fi rstname:
+lastname :
+' adhi'
+'mani
+email: 'dhivya@gmail.com'
+
+==================== page_35_img_1_Image21.png ====================
+>
+db . product. fi nd ( {category : "Electroni
+, price:
+_id: Objectld('68f8983adabcf8634ae16e10'),
+Mouse
+name:
+category: Electroni cs
+price: 25,
+stock:
+_id: Objectld('68f8983adabcf8634ae16e11')
+Keyboard
+name:
+category: Electroni cs
+price: 75,
+stock: 15@
+{ $ It:
+
+==================== page_35_img_2_Image22.png ====================
+>
+db. product. category:
+"Furniture" } ) . stock:
+
+==================== page_35_img_3_Image23.png ====================
+>
+db . product. insertMany ( [
+name :
+name :
+name :
+name :
+name :
+name :
+name :
+name :
+Laptop" ,
+category: "Electronics", price: 12@@, stock: 50 } ,
+"Mouse"
+category: "Electroni price: 25, stock: } ,
+Keyboa rd
+category: "Electronics", price: 75, stock: 150 } ,
+"Desk Chai r" ,
+category: "Furniture", price: stock: 30 } ,
+"Coffee Table"
+category: "Furniture", price: 15@, stock: 40 } ,
+Bookcase" ,
+category: "Furniture", price: stock: 20 } ,
+"T—Shi rt", category: "Apparel", price: 20, stock: } ,
+Jeans"
+category: "Apparel", price: stock: }
+
+==================== page_35_img_4_Image24.png ====================
+>
+db. product. find() . price: 1 } )
+
+==================== page_36_img_1_Image27.png ====================
+>
+db. product. category:
+Electronics
+, price:
+_id: Objectld('68f8983adabcf8634ae16e11')
+Keyboard
+name:
+category: Electroni cs
+price: 75,
+stock: 15@
+_id: Objectld('68f8983adabcf8634ae16eOf')
+Laptop' ,
+name:
+category: Electroni cs
+price:
+stock:
+{ $gt:
+50 } } ) . name: 1 } )
+
+==================== page_36_img_2_Image28.png ====================
+>
+>
+db . product. getIndexKeys ( )
+[ { _id: 1
+db . product. getlndexes ( )
+v: 2, key:
+name :
+
+==================== page_36_img_3_Image29.png ====================
+>
+db. product. category:
+>
+1,
+>
+1, price:
+category_l_price_l
+db . product. getIndexKeys ( )
+[ { _id: 1
+category :
+db . product. getlndexes ( )
+v:
+v:
+2,
+2,
+key:
+key:
+category:
+price:
+name :
+1, price:
+name:
+
+==================== page_37_img_1_Image16.png ====================
+>
+db. student. fi nd ({age:
+{$gt:12}})
+fi rstname:
+lastname:
+age: 16,
+' adhi'
+ravi
+email: 'adhi ravi@gmail.com'
+fi rstname:
+lastname:
+age: 15,
+batu'
+'velu'
+email: 'baluv@gmail.com'
+
+==================== page_38_img_1_Image19.png ====================
+>
+db. student. aggregate ( [
+$group :
+"$fi rstname" ,
+count: { $sum: 1 } ,
+// group by fi rstName field
+// count how many users have that name
+users: { $push: "$$ROOT" } // keep the full user documents
+$match: {
+count: { $gt:
+// only include names that appear more than once
+
+==================== page_38_img_2_Image20.png ====================
+fid: 'adhi'
+count:
+users:
+2,
+id: 1,
+fi rstname:
+lastname:
+age: 16,
+adhi
+ravi
+email: 'adhi ravi@gmait.com'
+id: 2,
+fi rstname:
+lastname:
+age: 12,
+adhi
+'mani
+email: 'dhivya@gmail . com'
+
+==================== page_39_img_1_Image23.png ====================
+>
+db. student. fi ndOne({
+_id:2 } ) ;
+fi rstname:
+lastname:
+12,
+' adhi'
+Imani
+email: 'dhivya@gmail.com'
+
+==================== page_39_img_2_Image24.png ====================
+>
+db. student. fi ndOne(
+{ $regex: ,
+{ email:
+' adhi'
+fi rstname:
+ravi
+lastname:
+age: 16,
+email: 'adhi ravi@gmail.com'
+$options
+
+==================== page_39_img_3_Image25.png ====================
+>
+db. product. fi ndOne(
+{ $regex:
+{ email:
+'Shruthi
+username :
+email: 'shruthi@kgi sliim.ac.in'
+$opti ons
+
+==================== page_40_img_1_Image25.png ====================
+Compass
+O My Queries
+Data Modeling
+CONNECTIONS (l)
+Search connections
+mycollections
+admin
+config
+e_commerce
+e_shopping
+local
+mongodbVSCodePlaygroundDB
+Welcome
+Create Database
+Database Name
+sample
+Collection Name
+stock
+O Time-Series
+Time-series collections efficiently store sequences of measurernents over a period
+of time. Learn Moree
+x
+DB Compass
+Cancel
+Create Database
+
+==================== page_40_img_2_Image26.png ====================
+MongoDB Compass - mycollections/sample.stock
+Connections Edit View Collection Help
+Compass
+My Queries
+Data Modeling
+CONNECTIONS (l)
+Search connections
+mycollections
+admin
+config
+e_commerce
+e_shopping
+local
+mongodbVSCodePlaygroundDB
+sample
+stock
+
+==================== page_41_img_1_Image29.png ====================
+MongoDB Compass - mycollections/sample.stock
+Connections Edit View Collection Help
+Compass
+My Queries
+Data Modeling
+CONNECTIONS (l)
+Search connections
+mycollections
+admin
+config
+e_commerce
+e_shopping
+local
+Share Schema as JSON (Legacy)
+Import Data
+Export Collection
+Type
+itock
+ample > stock
+Aggregations
+a query: { field:
+Schema
+Indexes
+Validation
+'value' } or Generate query_
+mongodbVSCodePlaygroundDB
+sample
+stock
+25
+This collection has no da
+It only takes a few seconds to import data from
+
+==================== page_41_img_2_Image30.png ====================
+Import
+To collection sample.stock
+Import file:
+Options
+stockdata_test.csv
+Select delimiter Comma
+e Ignore empty strings
+O Stop on errors
+Specify Fields and Types
+Learn more about data types
+e
+productcode
+String
+e profit
+Double
+e growth
+Double
+Cancel
+ngc
+x
+Import
+
+==================== page_42_img_1_Image33.png ====================
+1
+2
+3
+4
+5
+6
+stock
+@.72
+@ .45
+1.25
+1.05
+@.23
+@.67
+_id Objectld
+Objectld(
+Objectld(
+Objectld(
+Objectld(
+Objectld(
+Objectld(
+productcode
+"stk€@l"
+"stk€@2"
+"stk€@3"
+"stk€@4"
+"stk€@5"
+"stk€@6"
+Stri ng
+profit
+-0.12
+Double
+growth Double
+@.32
+
+==================== page_42_img_2_Image34.png ====================
+>
+db . stock _ data. fi nd ( {
+profit: { $gt: }
+_ id•. Objectld('68f9045717fOa1ecb33fOd5e'),
+productcode:
+' stk001 '
+profit: @.72,
+growth: @.15
+_ id•. Objectld('68f9045717fOa1ecb33fOd60'),
+productcode:
+' stk003 '
+profit: 1.25,
+growth: @.32
+_id: Objectld('68f9045717fOa1ecb33fOd62')
+productcode:
+' stk005 '
+profit: 1.@5,
+growth: @.23
+
+==================== page_42_img_3_Image35.png ====================
+_ id•. Objectld('68f9045717fOa1ecb33fOd63'),
+productcode:
+' stk006 '
+profit: @.67,
+growth:
+sample >
+
+==================== page_43_img_1_Image38.png ====================
+>
+use sample
+switched to db sample
+>
+db . stock _ data. fi nd ( {
+growth: { $ It: @ }
+_id: Objectld('68f9045717fOa1ecb33fOd5f')
+productcode:
+' stk@02 '
+profit: -0.12,
+profit:
+growth.
+@.45,
+_ id•. Objectld('68f9045717fOa1ecb33fOd61'),
+productcode:
+' stk@04 '
+growth.
+
+==================== page_44_img_1_Image41.png ====================
+C: \Program --db sample —collection stock --type csv --file D:\ADBMS\Practical\stockdata_test
+. csv --headerline
+2025-10-27T13 : 39 : 43.136+0530
+2025-10-27T13 : 39 : 43.14@+€530
+connected to: mongodb://localhost/
+6 document(s) imported successfully. 0 document(s) failed to import.
+
+==================== page_44_img_2_Image42.png ====================
+C:\Program --db sample --collection stock --file "D:\ADBMS\Practical\output_stockdata1.json"
+connected to: mongodb://localhost/
+: OO.
+6 document(s) imported successfully. 0 document(s)
+failed to import.
+: : OO.
+
+==================== page_44_img_3_Image43.png ====================
+C:\Program --db:sample --collection:stock
+connected to: mongodb://localhost/
+2025-10-27T13 : 45 :
+exported 6 records
+: 45 :
+C:\Program --db sample --collection
+stock —out
+connected to: mongodb://localhost/
+2025-10-27T13 :
+exported 6 records
+: 34.772+0530
+
+==================== page_44_img_4_Image44.png ====================
+C:\Program Files\MongoDB\Tools\100\bin>mongoexport --db sample —collection stock
+connected to: mongodb://localhost/
+53 : 47.054+0530
+exported 6 records
+: 53 : 47.061+0530
+—out "D: csv"
